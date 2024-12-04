@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header ---------------------------------------------------------- -->
+
+  <header class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-3xl font-bold">Bechir Chermiti</h1>
+      <nav class="space-x-5">
+        <a href="#home" class=" text-2xl hover:underline">Home</a>
+        <a href="#projects" class="text-2xl hover:underline">Projects</a>
+        <a href="#contact" class="text-2xl hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero ----------------------------------------------- -->
+  <section id="home" class="bg-cover bg-center h-[400px] text-white" style="background-image: url('./home-bg.jpg');">
+    <div class="flex flex-col justify-center items-center h-[400px]  bg-black bg-opacity-50 p-4">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm Bechir</h2>
+      <p class="text-lg md:text-2xl">A Civil Engineer </p>
+      <p class="text-lg md:text-2xl">A passionate JS developer </p>
+
+    </div>
+  </section>
+
+  <!-- Skills ------------------------------------------- -->
+  <section id="skills" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      
+      <h3 class="text-3xl font-bold text-center mb-8">My Skills</h3>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="bg-blue-500 text-white p-5 rounded shadow-md text-center">
+          <p class="font-bold">HTML</p>
+        </div>
+        <div class="bg-blue-500 text-white p-5 rounded shadow-md text-center">
+          <p class="font-bold">CSS</p>
+        </div>
+        <div class="bg-blue-500 text-white p-5 rounded shadow-md text-center">
+          <p class="font-bold">JavaScript</p>
+        </div>
+        <div class="bg-blue-500 text-white p-5 rounded shadow-md text-center">
+          <p class="font-bold">React</p>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Projects Section --------------------------------------------------------- -->
+  <section id="projects" class="py-16 bg-gray-200">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-8">Projects</h3>
+      <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
+       
+        <div class="bg-white rounded shadow-md">
+      <img src="Capture1.JPG" alt="Project 1" class="rounded-t">
+      <div class="p-4">
+      <h4 class="font-semibold text-lg">My Professional portfolio </h4>
+        <p class="text-sm">See description ...</p>
+          </div>
+      </div>
+
+        <div class="bg-white rounded shadow-md">
+          <img src="Capture2.JPG" alt="Project 2" class="rounded-t">
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">About ME</h4>
+            <p class="text-sm">See description ...</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded shadow-md">
+          <img src="Capture3.JPG" alt="Project 3" class="rounded-t">
+          <div class="p-4">
+            <h4 class="font-semibold text-lg">Previous Projects</h4>
+            <p class="text-sm">See description ...</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form --------------------------------------------------------------- -->
+  <section id="contact" class="py-16 bg-gray-100">
+    <div class="container mx-auto">
+      <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
+      <form class="max-w-xl mx-auto bg-white p-8 rounded shadow-md">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-semibold mb-2">Name</label>
+          <input type="text" id="name" class="w-full p-2 border rounded" placeholder="Your name">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+          <input type="email" id="email" class="w-full p-2 border rounded" placeholder="Your email">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+          <textarea id="message" class="w-full p-2 border rounded" rows="4" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-500 text-white p-5  px-6 rounded hover:bg-blue-700">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer ------------------------------------------------------------------  -->
+  <footer class="bg-blue-700 text-white p-4 py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <p class="text-2xl font-semibold">&copy; 2024 Bechir Chermiti </p>
+      <div class="space-x-4 text-xl font-semibold" >
+        <a href="https://twitter.com/Chermitibechir" target="_blank" class="hover:underline">Twitter</a>
+        <a href="https://github.com/Chermitifx" target="_blank" class="hover:underline">LinkedIn</a>
+        <a href="https://github.com/Chermitifx" target="_blank" class="hover:underline">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
